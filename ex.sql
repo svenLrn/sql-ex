@@ -34,5 +34,4 @@ CREATE USER 'martin'@'localhost' IDENTIFIED BY 'admin';
 
 GRANT SELECT, UPDATE ON Books TO 'martin'@'localhost';
 
--- Make sure Martin cannot delete records
 REVOKE DELETE ON Books FROM 'martin'@'localhost';
