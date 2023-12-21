@@ -41,3 +41,9 @@ REVOKE UPDATE ON Books FROM 'martin'@'localhost';
 
 DELETE FROM YourDatabaseName.Books WHERE book_id = 101;
 COMMIT;
+
+START TRANSACTION;
+
+DELETE FROM Books WHERE book_id = 103;
+
+ROLLBACK;
