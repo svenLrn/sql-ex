@@ -1,0 +1,3 @@
+SELECT *
+FROM titanic
+WHERE Embarked = 'C' AND Fare > 75;
