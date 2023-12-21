@@ -28,3 +28,11 @@ VALUES ('The Galactic Odyssey', 'Orion Starfield', 'Science Fiction', 2005, '123
 UPDATE Books
 SET price = 12.99, stock_count = 4
 WHERE title = 'War and Peace' AND author = 'Leo Tolstoy';
+
+
+CREATE USER 'martin'@'localhost' IDENTIFIED BY 'admin';
+
+GRANT SELECT, UPDATE ON Books TO 'martin'@'localhost';
+
+-- Make sure Martin cannot delete records
+REVOKE DELETE ON Books FROM 'martin'@'localhost';
