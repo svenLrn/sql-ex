@@ -38,3 +38,6 @@ REVOKE DELETE ON Books FROM 'martin'@'localhost';
 
 
 REVOKE UPDATE ON Books FROM 'martin'@'localhost';
+
+DELETE FROM YourDatabaseName.Books WHERE book_id = 101;
+COMMIT;
