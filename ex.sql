@@ -35,3 +35,6 @@ CREATE USER 'martin'@'localhost' IDENTIFIED BY 'admin';
 GRANT SELECT, UPDATE ON Books TO 'martin'@'localhost';
 
 REVOKE DELETE ON Books FROM 'martin'@'localhost';
+
+
+REVOKE UPDATE ON Books FROM 'martin'@'localhost';
